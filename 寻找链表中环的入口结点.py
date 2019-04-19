@@ -18,6 +18,4 @@ class Solution:
             else:
                 tempList.append(p)
             p = p.next
-
-            
-            
+        # return None
