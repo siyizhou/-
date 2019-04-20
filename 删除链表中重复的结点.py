@@ -8,16 +8,16 @@
 
 class Solution:
     def deleteDuplication(self,pHead):
-        if pHead is None or pHead.next is None:
+        if pHead is None or pHead.next is None:  
             return pHead
         head1=pHead.next
         if head1.val != pHead.val:
-            pHead.next = self.deleteDuplication(pHead.next)
+            pHead.next = self.deleteDuplication(pHead.next)    #递归
         else:
-            while pHead.val == head1.val and head1.next is not None:
-                head1 = head1.next
+            while pHead.val == head1.val and head1.next is not None:   #还剩下至少3个结点，且前两个结点值相等，如4->4->5, 4->4>-4
+                head1 = head1.next     #4->5,4->4
             if head1.val != pHead.val:
-                pHead=self.deleteDuplication(head1)
+                pHead=self.deleteDuplication(head1)   #递归
             else:
-                return None
+                return None       #如果剩下的两个值相等则，返回None
         return pHead
