@@ -12,19 +12,3 @@
 中序遍历：左子树---> 根结点 ---> 右子树<br>
 后序遍历：左子树 ---> 右子树 ---> 根结点<br>
 层次遍历：仅仅需按层次遍历就可以<br>
-
-class Solution:
-    def GetNext(self, pNode):
-        # write code here
-        if not pNode:
-            return pNode
-        if pNode.right:   #有右子树的，那么下一个结点为右子树最左边的一个点
-            left1 = pNode.right
-            while left1.left:
-                left1 = lef1.left
-            return left1
-        while pNode.next:  #若此结点没有右子树
-            temp = pNode.next
-            if temp.left==pNode:    #如果是父节点的左结点，则下一个结点即为父节点
-                return temp
-            pNode = temp
