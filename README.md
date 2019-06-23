@@ -42,6 +42,7 @@ https://www.luogu.org/problemnew/show/P5018<br>
 
 
 ## 已知一颗二叉树的前序（后序）遍历序列和中序遍历序列，如何构建这棵二叉树？
+https://www.cnblogs.com/fengziwei/p/7891965.html<br>
 以前序为例子：<br>
 前序遍历序列：ABCDEF<br>
 中序遍历序列：CBDAEF<br>
