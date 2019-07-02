@@ -24,3 +24,9 @@ parent(i) = floor((i - 1)/2)<br>
 left(i)   = 2i + 1<br>
 right(i)  = 2i + 2<br>
 注： right(i) 就是简单的 left(i) + 1,要保证是有效索引
+
+
+## 堆的操作
+插入<br>
+删除根节点<br>
+删除任意结点
